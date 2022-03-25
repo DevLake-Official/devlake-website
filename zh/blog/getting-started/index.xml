@@ -1,0 +1,98 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思码逸 – Getting Started</title>
+    <link>https://mappjzc.github.com/zh/blog/getting-started/</link>
+    <description>Recent content in Getting Started on 思码逸</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 30 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://mappjzc.github.com/zh/blog/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: Docker Quickstart</title>
+      <link>https://mappjzc.github.com/zh/blog/2018/07/30/docker-quickstart/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/zh/blog/2018/07/30/docker-quickstart/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;install-the-prerequisites&#34;&gt;Install the prerequisites&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;On Mac and Windows, download and install &lt;a href=&#34;https://www.docker.com/get-started&#34;&gt;Docker
+Desktop&lt;/a&gt;.  On Linux, install &lt;a href=&#34;https://docs.docker.com/engine/install/#server&#34;&gt;Docker
+engine&lt;/a&gt; and &lt;a href=&#34;https://docs.docker.com/compose/install/&#34;&gt;Docker
+compose&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The installation may require you to reboot your computer for the changes to
+take effect.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/git-guides/install-git&#34;&gt;Install git&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;create-your-repository-from-the-docsy-example-template&#34;&gt;Create your repository from the docsy-example template&lt;/h2&gt;
+&lt;p&gt;The docsy-example repository provides a basic site structure that you can use
+as starting point to create your own documentation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use the &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;docsy-example template&lt;/a&gt;
+to &lt;a href=&#34;https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template&#34;&gt;create your own repository&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the code to your local machine by &lt;a href=&#34;https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository&#34;&gt;cloning your newly created
+repository&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Change your working directory to the newly created folder:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; docsy-example
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;build-and-run-the-container&#34;&gt;Build and run the container&lt;/h2&gt;
+&lt;p&gt;The docsy-example repository includes a
+&lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34;&gt;Dockerfile&lt;/a&gt; that you can
+use to run your site.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Build the docker image:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker-compose build
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run the built image:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker-compose up
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the address &lt;code&gt;http://localhost:1313&lt;/code&gt; in your web browser to load the
+docsy-example homepage. You can now make changes to the source files, those
+changes will be live-reloaded in your browser.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cleanup&#34;&gt;Cleanup&lt;/h2&gt;
+&lt;p&gt;To cleanup your system and delete the container image follow the next steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Stop Docker Compose with &lt;strong&gt;Ctrl + C&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove the produced images&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker-compose rm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Learn about &lt;a href=&#34;https://mappjzc.github.com/docs/getting-started/&#34;&gt;basic setup and configurations for Docsy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mappjzc.github.com/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mappjzc.github.com/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

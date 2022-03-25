@@ -1,0 +1,309 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思码逸 – Documentation（假装都是中文）</title>
+    <link>https://mappjzc.github.com/zh/docs/</link>
+    <description>Recent content in Documentation（假装都是中文） on 思码逸</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://mappjzc.github.com/zh/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Getting Started</title>
+      <link>https://mappjzc.github.com/zh/docs/getting-started/1.localsetup/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/zh/docs/getting-started/1.localsetup/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;user-setupa-iduser-setupa&#34;&gt;User setup&lt;a id=&#34;user-setup&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you only plan to run the product locally, this is the &lt;strong&gt;ONLY&lt;/strong&gt; section you should need.&lt;/li&gt;
+&lt;li&gt;If you want to run in a cloud environment, click &lt;a valign=&#34;middle&#34; href=&#34;https://www.teamcode.com/tin/clone?applicationId=259777118600769536&#34;&gt;
+&amp;lt;img
+src=&amp;ldquo;&lt;a href=&#34;https://static01.teamcode.com/badge/teamcode-badge-run-in-cloud-en.svg%22&#34;&gt;https://static01.teamcode.com/badge/teamcode-badge-run-in-cloud-en.svg&amp;quot;&lt;/a&gt;
+width=&amp;ldquo;120px&amp;rdquo;
+alt=&amp;ldquo;Teamcode&amp;rdquo; valign=&amp;ldquo;middle&amp;rdquo;
+/&amp;gt;
+&lt;/a&gt; to set up. This is the detailed &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/How-to-Set-Up-Dev-Lake-with-Tin&#34;&gt;guide&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Commands written &lt;code&gt;like this&lt;/code&gt; are to be run in your terminal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;required-packages-to-installa-iduser-setup-requirementsa&#34;&gt;Required Packages to Install&lt;a id=&#34;user-setup-requirements&#34;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/get-docker&#34;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/compose/install/&#34;&gt;docker-compose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NOTE: After installing docker, you may need to run the docker application and restart your terminal&lt;/p&gt;
+&lt;h4 id=&#34;commands-to-run-in-your-terminala-iduser-setup-commandsa&#34;&gt;Commands to run in your terminal&lt;a id=&#34;user-setup-commands&#34;&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT: DevLake doesn&amp;rsquo;t support Database Schema Migration yet,  upgrading an existing instance is likely to break, we recommend that you deploy a new instance instead.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download &lt;code&gt;docker-compose.yml&lt;/code&gt; and &lt;code&gt;env.example&lt;/code&gt; from &lt;a href=&#34;https://github.com/merico-dev/lake/releases/latest&#34;&gt;latest release page&lt;/a&gt; into a folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rename &lt;code&gt;env.example&lt;/code&gt; to &lt;code&gt;.env&lt;/code&gt;. For Mac/Linux users, please run &lt;code&gt;mv env.example .env&lt;/code&gt; in the terminal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start Docker on your machine, then run &lt;code&gt;docker-compose up -d&lt;/code&gt; to start the services.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visit &lt;code&gt;localhost:4000&lt;/code&gt; to set up configuration files.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigate to desired plugins on the Integrations page&lt;/li&gt;
+&lt;li&gt;Please reference the following for more details on how to configure each one:&lt;br&gt;
+&lt;a href=&#34;plugins/jira/README.md&#34; target=&#34;_blank&#34;&gt;Jira&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;plugins/gitlab/README.md&#34; target=&#34;_blank&#34;&gt;GitLab&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;plugins/jenkins/README.md&#34; target=&#34;_blank&#34;&gt;Jenkins&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;plugins/github/README.md&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Submit the form to update the values by clicking on the &lt;strong&gt;Save Connection&lt;/strong&gt; button on each form page&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;devlake&lt;/code&gt; takes a while to fully boot up. if &lt;code&gt;config-ui&lt;/code&gt; complaining about api being unreachable, please wait a few seconds and try refreshing the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visit &lt;code&gt;localhost:4000/pipelines/create&lt;/code&gt; to RUN a Pipeline and trigger data collection.&lt;/p&gt;
+&lt;p&gt;Pipelines Runs can be initiated by the new &amp;ldquo;Create Run&amp;rdquo; Interface. Simply enable the &lt;strong&gt;Data Source Providers&lt;/strong&gt; you wish to run collection for, and specify the data you want to collect, for instance, &lt;strong&gt;Project ID&lt;/strong&gt; for Gitlab and &lt;strong&gt;Repository Name&lt;/strong&gt; for GitHub.&lt;/p&gt;
+&lt;p&gt;Once a valid pipeline configuration has been created, press &lt;strong&gt;Create Run&lt;/strong&gt; to start/run the pipeline.
+After the pipeline starts, you will be automatically redirected to the &lt;strong&gt;Pipeline Activity&lt;/strong&gt; screen to monitor collection activity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pipelines&lt;/strong&gt; is accessible from the main menu of the config-ui for easy access.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manage All Pipelines: &lt;code&gt;http://localhost:4000/pipelines&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create Pipeline RUN: &lt;code&gt;http://localhost:4000/pipelines/create&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Track Pipeline Activity: &lt;code&gt;http://localhost:4000/pipelines/activity/[RUN_ID]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For advanced use cases and complex pipelines, please use the Raw JSON API to manually initiate a run using &lt;strong&gt;cURL&lt;/strong&gt; or graphical API tool such as &lt;strong&gt;Postman&lt;/strong&gt;. &lt;code&gt;POST&lt;/code&gt; the following request to the DevLake API Endpoint.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;plugin&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;options&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;repo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;lake&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;owner&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;merico-dev&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please refer to this wiki &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/How-to-use-the-triggers-page&#34;&gt;How to trigger data collection&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;em&gt;View Dashboards&lt;/em&gt; button in the top left when done, or visit &lt;code&gt;localhost:3002&lt;/code&gt; (username: &lt;code&gt;admin&lt;/code&gt;, password: &lt;code&gt;admin&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;We use &lt;a href=&#34;https://grafana.com/&#34; target=&#34;_blank&#34;&gt;Grafana&lt;/a&gt; as a visualization tool to build charts for the &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DataModel.Domain-layer-schema&#34;&gt;data stored in our database&lt;/a&gt;. Using SQL queries, we can add panels to build, save, and edit customized dashboards.&lt;/p&gt;
+&lt;p&gt;All the details on provisioning and customizing a dashboard can be found in the &lt;a href=&#34;docs/GRAFANA.md&#34;&gt;Grafana Doc&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;setup-cron-job&#34;&gt;Setup cron job&lt;/h4&gt;
+&lt;p&gt;To synchronize data periodically, we provide &lt;a href=&#34;./cmd/lake-cli/README.md&#34;&gt;&lt;code&gt;lake-cli&lt;/code&gt;&lt;/a&gt; for easily sending data collection requests along with &lt;a href=&#34;./devops/sync/README.md&#34;&gt;a cron job&lt;/a&gt; to periodically trigger the cli tool.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: What is DevLake?</title>
+      <link>https://mappjzc.github.com/zh/docs/overview/1.whatisdevlake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/zh/docs/overview/1.whatisdevlake/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;what-is-devlake&#34;&gt;What is DevLake?&lt;/h2&gt;
+&lt;p&gt;What is DevLake?
+DevLake brings your DevOps data into one practical, customized, extensible view. Ingest, analyze, and visualize data from an ever-growing list of developer tools, with our open source product.&lt;/p&gt;
+&lt;p&gt;DevLake is designed for developer teams looking to make better sense of their development process and to bring a more data-driven approach to their own practices. You can ask DevLake many questions regarding your development process. Just connect and query.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app-259373083972538368-3002.ars.teamcode.com/d/0Rjxknc7z/demo-homepage?orgId=1&#34;&gt;See demo&lt;/a&gt;. Username/password:test/test. The demo is based on the data from this repo, merico-dev/lake.&lt;/p&gt;
+&lt;p&gt;Get started with just a few clicks&lt;/p&gt;
+&lt;table&gt; &lt;tr&gt; &lt;td valign=&#34;middle&#34;&gt;&lt;a href=&#34;#user-setup&#34;&gt;Run DevLake&lt;/a&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+&lt;br&gt;
+&lt;div align=&#34;left&#34;&gt; &lt;img src=&#34;https://user-images.githubusercontent.com/14050754/145056261-ceaf7044-f5c5-420f-80ca-54e56eb8e2a7.png&#34; width=&#34;100%&#34; alt=&#34;User Flow&#34; style=&#34;border-radius:15px;&#34;/&gt; &lt;p align=&#34;center&#34;&gt;User Flow&lt;/p&gt;
+&lt;p&gt;What can be accomplished with DevLake?
+Collect DevOps data across the entire SDLC process and connect data silos
+A standard &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DataModel.Domain-layer-schema&#34;&gt;data model&lt;/a&gt; and out-of-the-box &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/Metric-Cheatsheet&#34;&gt;metrics&lt;/a&gt; for software engineering
+Flexible &lt;a href=&#34;https://github.com/merico-dev/lake/blob/main/ARCHITECTURE.md&#34;&gt;framework&lt;/a&gt; for data collection and ETL, support customized analysis&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Kubernetes Setup</title>
+      <link>https://mappjzc.github.com/zh/docs/getting-started/2.kubernetessetup/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/zh/docs/getting-started/2.kubernetessetup/</guid>
+      <description>
+        
+        
+        &lt;p&gt;TBD@张开云&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Architecture</title>
+      <link>https://mappjzc.github.com/zh/docs/overview/2.architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/zh/docs/overview/2.architecture/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;What is DevLake?
+DevLake brings your DevOps data into one practical, customized, extensible view. Ingest, analyze, and visualize data from an ever-growing list of developer tools, with our open source product.&lt;/p&gt;
+&lt;p&gt;DevLake is designed for developer teams looking to make better sense of their development process and to bring a more data-driven approach to their own practices. You can ask DevLake many questions regarding your development process. Just connect and query.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app-259373083972538368-3002.ars.teamcode.com/d/0Rjxknc7z/demo-homepage?orgId=1&#34;&gt;See demo&lt;/a&gt;. Username/password:test/test. The demo is based on the data from this repo, merico-dev/lake.&lt;/p&gt;
+&lt;p&gt;Get started with just a few clicks&lt;/p&gt;
+&lt;table&gt; &lt;tr&gt; &lt;td valign=&#34;middle&#34;&gt;&lt;a href=&#34;#user-setup&#34;&gt;Run DevLake&lt;/a&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+&lt;br&gt;
+&lt;div align=&#34;left&#34;&gt; &lt;img src=&#34;https://user-images.githubusercontent.com/14050754/145056261-ceaf7044-f5c5-420f-80ca-54e56eb8e2a7.png&#34; width=&#34;100%&#34; alt=&#34;User Flow&#34; style=&#34;border-radius:15px;&#34;/&gt; &lt;p align=&#34;center&#34;&gt;User Flow&lt;/p&gt;
+&lt;p&gt;What can be accomplished with DevLake?
+Collect DevOps data across the entire SDLC process and connect data silos
+A standard &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DataModel.Domain-layer-schema&#34;&gt;data model&lt;/a&gt; and out-of-the-box &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/Metric-Cheatsheet&#34;&gt;metrics&lt;/a&gt; for software engineering
+Flexible &lt;a href=&#34;https://github.com/merico-dev/lake/blob/main/ARCHITECTURE.md&#34;&gt;framework&lt;/a&gt; for data collection and ETL, support customized analysis&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Docker Setup</title>
+      <link>https://mappjzc.github.com/zh/docs/getting-started/3.developersetup/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/zh/docs/getting-started/3.developersetup/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;developer-setupa-iddev-setupa&#34;&gt;Developer Setup&lt;a id=&#34;dev-setup&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h4 id=&#34;requirements&#34;&gt;Requirements&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/get-docker&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/doc/install&#34; target=&#34;_blank&#34;&gt;Golang v1.17+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Make
+&lt;ul&gt;
+&lt;li&gt;Mac (Already installed)&lt;/li&gt;
+&lt;li&gt;Windows: &lt;a href=&#34;http://gnuwin32.sourceforge.net/packages/make.htm&#34;&gt;Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;code&gt;sudo apt-get install build-essential&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-to-setup-dev-environment&#34;&gt;How to setup dev environment&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to where you would like to install this project and clone the repository:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/merico-dev/lake.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; lake
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install dependencies for plugins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;plugins/refdiff#development&#34;&gt;RefDiff&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Go packages&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;go get
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy the sample config file to new local file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp .env.example .env
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update the following variables in the file &lt;code&gt;.env&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DB_URL&lt;/code&gt;: Replace &lt;code&gt;mysql:3306&lt;/code&gt; with &lt;code&gt;127.0.0.1:3306&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the MySQL and Grafana containers:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure the Docker daemon is running before this step.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker-compose up -d mysql grafana
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run lake and config UI in dev mode in two seperate terminals:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# run lake&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make dev
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# run config UI&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make configure-dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visit config UI at &lt;code&gt;localhost:4000&lt;/code&gt; to configure data sources.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigate to desired plugins pages on the Integrations page&lt;/li&gt;
+&lt;li&gt;You will need to enter the required information for the plugins you intend to use.&lt;/li&gt;
+&lt;li&gt;Please reference the following for more details on how to configure each one:
+-&amp;gt; &lt;a href=&#34;plugins/jira/README.md&#34; target=&#34;_blank&#34;&gt;Jira&lt;/a&gt;
+-&amp;gt; &lt;a href=&#34;plugins/gitlab/README.md&#34; target=&#34;_blank&#34;&gt;GitLab&lt;/a&gt;,
+-&amp;gt; &lt;a href=&#34;plugins/jenkins/README.md&#34; target=&#34;_blank&#34;&gt;Jenkins&lt;/a&gt;
+-&amp;gt; &lt;a href=&#34;plugins/github/README.md&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Submit the form to update the values by clicking on the &lt;strong&gt;Save Connection&lt;/strong&gt; button on each form page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visit &lt;code&gt;localhost:4000/pipelines/create&lt;/code&gt; to RUN a Pipeline and trigger data collection.&lt;/p&gt;
+&lt;p&gt;Pipelines Runs can be initiated by the new &amp;ldquo;Create Run&amp;rdquo; Interface. Simply enable the &lt;strong&gt;Data Source Providers&lt;/strong&gt; you wish to run collection for, and specify the data you want to collect, for instance, &lt;strong&gt;Project ID&lt;/strong&gt; for Gitlab and &lt;strong&gt;Repository Name&lt;/strong&gt; for GitHub.&lt;/p&gt;
+&lt;p&gt;Once a valid pipeline configuration has been created, press &lt;strong&gt;Create Run&lt;/strong&gt; to start/run the pipeline.
+After the pipeline starts, you will be automatically redirected to the &lt;strong&gt;Pipeline Activity&lt;/strong&gt; screen to monitor collection activity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pipelines&lt;/strong&gt; is accessible from the main menu of the config-ui for easy access.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manage All Pipelines: &lt;code&gt;http://localhost:4000/pipelines&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create Pipeline RUN: &lt;code&gt;http://localhost:4000/pipelines/create&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Track Pipeline Activity: &lt;code&gt;http://localhost:4000/pipelines/activity/[RUN_ID]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For advanced use cases and complex pipelines, please use the Raw JSON API to manually initiate a run using &lt;strong&gt;cURL&lt;/strong&gt; or graphical API tool such as &lt;strong&gt;Postman&lt;/strong&gt;. &lt;code&gt;POST&lt;/code&gt; the following request to the DevLake API Endpoint.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;plugin&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;options&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;repo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;lake&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;owner&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;merico-dev&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please refer to this wiki &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/How-to-use-the-triggers-page&#34;&gt;How to trigger data collection&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;em&gt;View Dashboards&lt;/em&gt; button in the top left when done, or visit &lt;code&gt;localhost:3002&lt;/code&gt; (username: &lt;code&gt;admin&lt;/code&gt;, password: &lt;code&gt;admin&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;We use &lt;a href=&#34;https://grafana.com/&#34; target=&#34;_blank&#34;&gt;Grafana&lt;/a&gt; as a visualization tool to build charts for the &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DataModel.Domain-layer-schema&#34;&gt;data stored in our database&lt;/a&gt;. Using SQL queries, we can add panels to build, save, and edit customized dashboards.&lt;/p&gt;
+&lt;p&gt;All the details on provisioning and customizing a dashboard can be found in the &lt;a href=&#34;docs/GRAFANA.md&#34;&gt;Grafana Doc&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Optional) To run the tests:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make &lt;span style=&#34;color:#204a87&#34;&gt;test&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Roadmap</title>
+      <link>https://mappjzc.github.com/zh/docs/overview/3.roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/zh/docs/overview/3.roadmap/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;no-data&#34;&gt;No Data&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,117 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Merico – Best Practices</title>
+    <link>https://mappjzc.github.com/blog/best-practices/</link>
+    <description>Recent content in Best Practices on Merico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://mappjzc.github.com/blog/best-practices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: Hugo Content Tips</title>
+      <link>https://mappjzc.github.com/blog/1/01/01/hugo-content-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/blog/1/01/01/hugo-content-tips/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site
+generator. If you&amp;rsquo;re not already familiar with Hugo and, in particular, its version of Markdown, this page provides some
+useful tips and potential gotchas for adding and editing content for your site. Feel free to add your own!&lt;/p&gt;
+&lt;h2 id=&#34;nested-lists&#34;&gt;Nested lists&lt;/h2&gt;
+&lt;p&gt;Hugo currently uses the &lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;Blackfriday&lt;/a&gt; Markdown processor, which can be
+sensitive when it come to content that&amp;rsquo;s deeply nested in a list. In particular, be aware that
+&lt;a href=&#34;https://github.com/russross/blackfriday/issues/329&#34;&gt;this known issue&lt;/a&gt; can surface if or when you have multiple authors and
+other contributors who might mix &amp;rsquo;tabs&amp;rsquo; and &amp;lsquo;spaces&amp;rsquo; when indenting lists, or fail to indent properly.&lt;/p&gt;
+&lt;p&gt;An additional factor here is that because GitHub uses a different Markdown processor, GitHub markdown and the editor UI may
+render some nested lists properly, while Blackfriday might render that same content poorly. For example, the count in a
+numbered list might restart, or your nested content within a list is not indented
+(shows as a peer element instead of a nested child element). You may want to recommend in your contribution guidelines
+(&lt;a href=&#34;https://mappjzc.github.com/docs/contribution-guidelines/#contributing-to-these-docs&#34;&gt;as we do&lt;/a&gt;) that contributors preview their content with Hugo
+(or use Netlify&amp;rsquo;s preview feature for PRs if that&amp;rsquo;s your chosen deployment tool) to ensure their content renders correctly
+with Blackfriday.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    &lt;a href=&#34;https://github.com/russross/blackfriday/issues/329#issuecomment-277602856&#34;&gt;Per comments on the known issue&lt;/a&gt;, some
+users have found that using 4 spaces instead of a &amp;rsquo;tab&amp;rsquo; results in consistent behavior. For example, consider
+configuring your local editor to use 4 spaces when the &lt;strong&gt;Tab&lt;/strong&gt; key is pressed.
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;linking&#34;&gt;Linking&lt;/h2&gt;
+&lt;p&gt;By default, regular relative URLs in links are left unchanged by Hugo (they&amp;rsquo;re still relative links in your site&amp;rsquo;s generated HTML), hence some hardcoded relative links like &lt;code&gt;[relative cross-link](../../peer-folder/sub-file.md)&lt;/code&gt; might behave unexpectedly compared to how they work on your local file system. You may find it helpful to use some of Hugo&amp;rsquo;s built-in &lt;a href=&#34;https://gohugo.io/content-management/cross-references/#use-ref-and-relref&#34;&gt;link shortcodes&lt;/a&gt; to avoid broken links in your generated site. For example a &lt;code&gt;{{&amp;lt; ref &amp;quot;filename.md&amp;quot; &amp;gt;}}&lt;/code&gt; link in Hugo will actually
+find and automatically link to your file named &lt;code&gt;filename.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Note, however, that &lt;code&gt;ref&lt;/code&gt; and &lt;code&gt;relref&lt;/code&gt; links don&amp;rsquo;t work with &lt;code&gt;_index&lt;/code&gt; or &lt;code&gt;index&lt;/code&gt; files (for example, this site&amp;rsquo;s &lt;a href=&#34;https://mappjzc.github.com/docs/adding-content/&#34;&gt;content landing page&lt;/a&gt;): you&amp;rsquo;ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site&amp;rsquo;s root URL, for example: &lt;code&gt;/docs/adding-content/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mappjzc.github.com/docs/adding-content/content/#working-with-links&#34;&gt;Learn more about linking&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Organizing Your Content</title>
+      <link>https://mappjzc.github.com/blog/1/01/01/organizing-your-content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/blog/1/01/01/organizing-your-content/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you have a look at our &lt;a href=&#34;https://example.docsy.dev/about/&#34;&gt;Example Site&lt;/a&gt;, you&amp;rsquo;ll see that we&amp;rsquo;ve organized
+the Documentation section into a number of subsections, each with some recommendations about what you might put
+in that section.&lt;/p&gt;
+&lt;h2 id=&#34;do-i-need-to-use-this-structure&#34;&gt;Do I need to use this structure?&lt;/h2&gt;
+&lt;p&gt;Absolutely not! The site structure in the Example Site was created to meet the needs of large docsets for large
+products with lots of features, potential tasks, and reference elements. For a simpler docset (like this one!),
+it&amp;rsquo;s fine to just structure your docs around specific features that your users need to know about.  Even for larger
+documentation sets, you may find that the structure isn&amp;rsquo;t useful &amp;ldquo;as is&amp;rdquo;, or that you don&amp;rsquo;t need to use all the
+section types.&lt;/p&gt;
+&lt;p&gt;We do recommend that (as we&amp;rsquo;ve done here) you provide at least:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An &lt;strong&gt;Overview&lt;/strong&gt; of the product (either on the docs landing page or a separate Overview page) that tells the user
+why they should be interested in your project.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;Getting Started&lt;/strong&gt; page.&lt;/li&gt;
+&lt;li&gt;Some &lt;strong&gt;Examples&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may also want to create some tasks/how-tos for your project&amp;rsquo;s features. Feel free to copy this Docsy user guide
+site or even just the docs section instead if you like this simpler structure better.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    If you want to copy this guide, be aware that its &lt;a href=&#34;https://github.com/google/docsy/tree/master/userguide&#34;&gt;source files&lt;/a&gt; are &lt;em&gt;inside&lt;/em&gt; the Docsy theme repo, and so it doesn&amp;rsquo;t have its own &lt;code&gt;themes/&lt;/code&gt; directory: instead, we run &lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; to use Docsy from its parent directory. You may want to either copy the site and &lt;a href=&#34;https://mappjzc.github.com/docs/getting-started/#option-2-use-the-docsy-theme-in-your-own-site&#34;&gt;add a &lt;code&gt;themes/&lt;/code&gt; directory with Docsy&lt;/a&gt;, or just copy the &lt;code&gt;docs/&lt;/code&gt; folder into your existing site&amp;rsquo;s content root.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://mappjzc.github.com/docs/adding-content/content/#organizing-your-documentation&#34;&gt;Learn more about how Hugo and Docsy use folders and other files to organize your site&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;why-this-structure&#34;&gt;Why this structure?&lt;/h2&gt;
+&lt;p&gt;We based the Example Site structure on our own experiences creating (and using) large documentation sets for
+different types of project and on user research carried out on some of our bigger sites. In user studies we saw that
+users cared most about and immediately looked for a Get Started or Getting Started section
+(so they could, well, get started), and some examples to explore and copy, so we made those into prominent top-level doc
+sections in our site. Users also wanted to find &amp;ldquo;recipes&amp;rdquo; that they could easily look up to perform specific tasks and
+put together to create their own applications or projects, so we suggest that you add this kind of content as Tasks.
+Other content types such as conceptual docs, reference docs, and end-to-end tutorials are less important for all doc sets,
+particularly for smaller projects. We emphasize in our Example Site that these sections are optional.&lt;/p&gt;
+&lt;p&gt;We hope to improve the Example Site structure further as we learn more about how users interact with technical
+documentation, particularly for Open Source projects.&lt;/p&gt;
+&lt;h2 id=&#34;writing-style-guide&#34;&gt;Writing style guide&lt;/h2&gt;
+&lt;p&gt;This guide and the example site just address how to organize your documentation content into pages and sections. For some guidance on how to organize and write the content in each page, we recommend the
+&lt;a href=&#34;https://developers.google.com/style/&#34;&gt;Google Developer Documentation Style Guide&lt;/a&gt;, particularly the
+&lt;a href=&#34;https://developers.google.com/style/highlights&#34;&gt;Style Guide Highlights&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

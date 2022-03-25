@@ -1,0 +1,1720 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.94.2" />
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Docsy Shortcodes | Merico</title>
+<meta name="description" content="Use Docsy&#39;s Hugo shortcodes to quickly build site pages.
+">
+<meta property="og:title" content="Docsy Shortcodes" />
+<meta property="og:description" content="Use Docsy&#39;s Hugo shortcodes to quickly build site pages.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mappjzc.github.com/blog/2017/01/05/docsy-shortcodes/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-24T11:19:20+00:00" /><meta property="og:site_name" content="Merico" />
+
+<meta itemprop="name" content="Docsy Shortcodes">
+<meta itemprop="description" content="Use Docsy&#39;s Hugo shortcodes to quickly build site pages.
+"><meta itemprop="datePublished" content="2017-01-05T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-03-24T11:19:20+00:00" />
+<meta itemprop="wordCount" content="2590">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docsy Shortcodes"/>
+<meta name="twitter:description" content="Use Docsy&#39;s Hugo shortcodes to quickly build site pages.
+"/>
+
+
+
+
+
+<link href="/scss/main.css" rel="stylesheet">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page td-blog">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zm7.993 21.8577c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="font-weight-bold">Merico</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/team/" ><i class='fas fa-info-circle'></i><span>Team</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/blog/" ><i class='fas fa-book'></i><span class="active">Blog</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/docs/" ><i class='fas fa-book'></i><span>Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/community/" ><i class='fas fa-users'></i><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="https://github.com/merico-dev/lake/" target="_blank" ><i class='fab fa-github'></i><span>GitHub</span><span class='alert'>New!</span></a>
+			</li>
+			
+			
+			
+			<li class="nav-item dropdown mr-4 d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/zh/blog/2017/01/05/docsy-shortcodes/">中文</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block"><input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+  <script>
+    $(function() {
+    $("#td-section-nav a").removeClass("active");
+    $("#td-section-nav #m-blog20170105docsy-shortcodes").addClass("active"); 
+    $("#td-section-nav #m-blog20170105docsy-shortcodes-li span").addClass("td-sidebar-nav-active-item"); 
+    $("#td-section-nav #m-blog20170105docsy-shortcodes").parents("li").addClass("active-path"); 
+    $("#td-section-nav li.active-path").addClass("show"); 
+    $("#td-section-nav li.active-path").children("input").prop('checked', true);
+    $("#td-section-nav #m-blog20170105docsy-shortcodes-li").siblings("li").addClass("show");  
+    $("#td-section-nav #m-blog20170105docsy-shortcodes-li").children("ul").children("li").addClass("show");  
+    $("#td-sidebar-menu").toggleClass("d-none"); 
+    });
+  </script>
+  
+<div id="td-sidebar-menu" class="td-sidebar__inner d-none">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="collapse td-sidebar-nav foldable-nav" id="td-section-nav">
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/zh/blog/1/01/01/adding-content/">中文</a>
+	
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-blog-li">
+  <a href="/blog/" title="Welcome to Docsy" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-blog"><span class="">Blog</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-bloggetting-started-li">
+  <input type="checkbox" id="m-bloggetting-started-check"/>
+  <label for="m-bloggetting-started-check"><a href="/blog/getting-started/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-bloggetting-started"><span class="">Getting Started</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20180730docker-quickstart-li">
+  <input type="checkbox" id="m-blog20180730docker-quickstart-check"/>
+  <label for="m-blog20180730docker-quickstart-check"><a href="/blog/2018/07/30/docker-quickstart/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog20180730docker-quickstart"><span class="">Docker Quickstart</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-blogadding-content-li">
+  <input type="checkbox" id="m-blogadding-content-check"/>
+  <label for="m-blogadding-content-check"><a href="/blog/adding-content/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-blogadding-content"><span class="">Content and Customization</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog10101adding-content-li">
+  <input type="checkbox" id="m-blog10101adding-content-check"/>
+  <label for="m-blog10101adding-content-check"><a href="/blog/1/01/01/adding-content/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog10101adding-content"><span class="">Adding Content</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20170105look-and-feel-li">
+  <input type="checkbox" id="m-blog20170105look-and-feel-check"/>
+  <label for="m-blog20170105look-and-feel-check"><a href="/blog/2017/01/05/look-and-feel/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog20170105look-and-feel"><span class="">Look and Feel</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20170105navigation-and-search-li">
+  <input type="checkbox" id="m-blog20170105navigation-and-search-check"/>
+  <label for="m-blog20170105navigation-and-search-check"><a href="/blog/2017/01/05/navigation-and-search/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog20170105navigation-and-search"><span class="">Navigation and Search</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20200202doc-versioning-li">
+  <input type="checkbox" id="m-blog20200202doc-versioning-check"/>
+  <label for="m-blog20200202doc-versioning-check"><a href="/blog/2020/02/02/doc-versioning/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog20200202doc-versioning"><span class="">Doc Versioning</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20170105docsy-shortcodes-li">
+  <input type="checkbox" id="m-blog20170105docsy-shortcodes-check"/>
+  <label for="m-blog20170105docsy-shortcodes-check"><a href="/blog/2017/01/05/docsy-shortcodes/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog20170105docsy-shortcodes"><span class="">Docsy Shortcodes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20170105logos-and-images-li">
+  <input type="checkbox" id="m-blog20170105logos-and-images-check"/>
+  <label for="m-blog20170105logos-and-images-check"><a href="/blog/2017/01/05/logos-and-images/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog20170105logos-and-images"><span class="">Logos and Images</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog10101print-support-li">
+  <input type="checkbox" id="m-blog10101print-support-check"/>
+  <label for="m-blog10101print-support-check"><a href="/blog/1/01/01/print-support/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog10101print-support"><span class="">Print Support</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog20190605analytics-and-user-feedback-li">
+  <input type="checkbox" id="m-blog20190605analytics-and-user-feedback-check"/>
+  <label for="m-blog20190605analytics-and-user-feedback-check"><a href="/blog/2019/06/05/analytics-and-user-feedback/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog20190605analytics-and-user-feedback"><span class="">Analytics and User Feedback</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog10101repository-links-li">
+  <input type="checkbox" id="m-blog10101repository-links-check"/>
+  <label for="m-blog10101repository-links-check"><a href="/blog/1/01/01/repository-links/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog10101repository-links"><span class="">Repository Links</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog10101taxonomy-support-li">
+  <input type="checkbox" id="m-blog10101taxonomy-support-check"/>
+  <label for="m-blog10101taxonomy-support-check"><a href="/blog/1/01/01/taxonomy-support/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog10101taxonomy-support"><span class="">Taxonomy Support</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-bloglanguage-li">
+  <input type="checkbox" id="m-bloglanguage-check"/>
+  <label for="m-bloglanguage-check"><a href="/blog/language/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-bloglanguage"><span class="">Multi-language Support</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blogdeployment-li">
+  <input type="checkbox" id="m-blogdeployment-check"/>
+  <label for="m-blogdeployment-check"><a href="/blog/deployment/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-blogdeployment"><span class="">Previews and Deployment</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blogexamples-li">
+  <input type="checkbox" id="m-blogexamples-check"/>
+  <label for="m-blogexamples-check"><a href="/blog/examples/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-blogexamples"><span class="">Examples</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blogupdating-li">
+  <input type="checkbox" id="m-blogupdating-check"/>
+  <label for="m-blogupdating-check"><a href="/blog/updating/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-blogupdating"><span class="">Updating Docsy</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-blogbest-practices-li">
+  <input type="checkbox" id="m-blogbest-practices-check"/>
+  <label for="m-blogbest-practices-check"><a href="/blog/best-practices/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-blogbest-practices"><span class="">Best Practices</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog10101hugo-content-tips-li">
+  <input type="checkbox" id="m-blog10101hugo-content-tips-check"/>
+  <label for="m-blog10101hugo-content-tips-check"><a href="/blog/1/01/01/hugo-content-tips/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog10101hugo-content-tips"><span class="">Hugo Content Tips</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blog10101organizing-your-content-li">
+  <input type="checkbox" id="m-blog10101organizing-your-content-check"/>
+  <label for="m-blog10101organizing-your-content-check"><a href="/blog/1/01/01/organizing-your-content/" class="align-left pl-0  td-sidebar-link td-sidebar-link__page" id="m-blog10101organizing-your-content"><span class="">Organizing Your Content</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-blogcontribution-guidelines-li">
+  <input type="checkbox" id="m-blogcontribution-guidelines-check"/>
+  <label for="m-blogcontribution-guidelines-check"><a href="/blog/contribution-guidelines/" class="align-left pl-0  td-sidebar-link td-sidebar-link__section" id="m-blogcontribution-guidelines"><span class="">Contribution Guidelines</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/google/docsy/tree/main/userguide/content/en/blog/Adding%20content/Shortcodes/index.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+  <a href="https://github.com/google/docsy/edit/main/userguide/content/en/blog/Adding%20content/Shortcodes/index.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/google/docsy/new/main/userguide/content/en/blog/Adding%20content/Shortcodes/index.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+  <a href="https://github.com/google/docsy/issues/new?title=Docsy%20Shortcodes" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+  <a href="https://github.com/google/docsy/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+  
+</div>
+
+            
+
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#shortcode-blocks">Shortcode blocks</a>
+      <ul>
+        <li><a href="#blockscover">blocks/cover</a></li>
+        <li><a href="#blockslead">blocks/lead</a></li>
+        <li><a href="#blockssection">blocks/section</a></li>
+        <li><a href="#blocksfeature">blocks/feature</a></li>
+        <li><a href="#blockslink-down">blocks/link-down</a></li>
+      </ul>
+    </li>
+    <li><a href="#shortcode-helpers">Shortcode helpers</a>
+      <ul>
+        <li><a href="#alert">alert</a></li>
+        <li><a href="#pageinfo">pageinfo</a></li>
+        <li><a href="#imgproc">imgproc</a></li>
+        <li><a href="#swaggerui">swaggerui</a></li>
+        <li><a href="#iframe">iframe</a></li>
+      </ul>
+    </li>
+    <li><a href="#tabbed-panes">Tabbed panes</a>
+      <ul>
+        <li><a href="#shortcode-details">Shortcode details</a></li>
+      </ul>
+    </li>
+    <li><a href="#card-panes">Card panes</a>
+      <ul>
+        <li><a href="#shortcode-card-for-text-images-">Shortcode <code>card</code> (for text, images, …)</a></li>
+        <li><a href="#shortcode-card-code-for-programming-code">Shortcode <code>card-code</code> (for programming code)</a></li>
+        <li><a href="#card-groups">Card groups</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+
+
+
+            
+
+	
+		
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-categories">
+      
+        <h5 class="taxonomy-title">Categories</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="https://mappjzc.github.com/categories/taxonomies/" data-taxonomy-term="taxonomies"><span class="taxonomy-label">Taxonomies</span><span class="taxonomy-count">1</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+	
+		
+
+
+
+  
+  
+    <div class="taxonomy taxonomy-terms-cloud taxo-tags">
+      
+        <h5 class="taxonomy-title">Tags</h5>
+      
+      <ul class="taxonomy-terms">
+        
+          <li><a class="taxonomy-term" href="https://mappjzc.github.com/tags/labelling/" data-taxonomy-term="labelling"><span class="taxonomy-label">Labelling</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="https://mappjzc.github.com/tags/structuring-content/" data-taxonomy-term="structuring-content"><span class="taxonomy-label">Structuring Content</span><span class="taxonomy-count">1</span></a></li>
+        
+          <li><a class="taxonomy-term" href="https://mappjzc.github.com/tags/tagging/" data-taxonomy-term="tagging"><span class="taxonomy-label">Tagging</span><span class="taxonomy-count">1</span></a></li>
+        
+      </ul>
+    </div>
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role="main">
+            <a class="btn btn-lg -bg-orange td-rss-button d-none d-lg-block" href="https://mappjzc.github.com/blog/adding-content/index.xml" target="_blank">
+              RSS <i class="fa fa-rss ml-2 "></i>
+            </a>
+            
+<div class="td-content">
+	<h1>Docsy Shortcodes</h1>
+	<div class="lead">Use Docsy&rsquo;s Hugo shortcodes to quickly build site pages.</div>
+	<div class="td-byline mb-4">
+		
+		<time datetime="2017-01-05" class="text-muted">Thursday, January 05, 2017</time>
+	</div>
+	<header class="article-meta">
+		
+
+  
+    
+
+
+  
+    
+
+
+  
+
+		
+	</header>
+	<p>Rather than writing all your site pages from scratch, Hugo lets you define and use <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a>. These are reusable snippets of content that you can include in your pages, often using HTML to create effects that are difficult or impossible to do in simple Markdown. Shortcodes can also have parameters that let you, for example, add your own text to a fancy shortcode text box. As well as Hugo&rsquo;s <a href="https://gohugo.io/content-management/shortcodes/">built-in shortcodes</a>, Docsy provides some shortcodes of its own to help you build your pages.</p>
+<h2 id="shortcode-blocks">Shortcode blocks</h2>
+<p>The theme comes with a set of custom  <strong>Page Block</strong> shortcodes that can be used to compose landing pages, about pages, and similar.</p>
+<p>These blocks share some common parameters:</p>
+<dl>
+<dt>height</dt>
+<dd>A pre-defined height of the block container. One of <code>min</code>, <code>med</code>, <code>max</code>, <code>full</code>, or <code>auto</code>. Setting it to <code>full</code> will fill the Viewport Height, which can be useful for landing pages.</dd>
+<dt>color</dt>
+<dd>The block will be assigned a color from the theme palette if not provided, but you can set your own if needed. You can use all of Bootstrap&rsquo;s color names, theme color names or a grayscale shade. Some examples would be <code>primary</code>, <code>white</code>, <code>dark</code>, <code>warning</code>, <code>light</code>, <code>success</code>, <code>300</code>, <code>blue</code>, <code>orange</code>. This will become the <strong>background color</strong> of the block, but text colors will adapt to get proper contrast.</dd>
+</dl>
+<h3 id="blockscover">blocks/cover</h3>
+<p>The <strong>blocks/cover</strong> shortcode creates a landing page type of block that fills the top of the page.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{<span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#204a87;font-weight:bold">blocks</span><span style="color:#a40000">/</span><span style="color:#c4a000">cover</span> <span style="color:#c4a000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Welcome!&#34;</span> <span style="color:#c4a000">image_anchor</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;center&#34;</span> <span style="color:#c4a000">height</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;full&#34;</span> <span style="color:#c4a000">color</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;primary&#34;</span> <span style="color:#000;font-weight:bold">&gt;</span>}}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">div</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;mx-auto&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;btn btn-lg btn-primary mr-3 mb-4&#34;</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;{{&lt; relref &#34;</span><span style="color:#a40000">/</span><span style="color:#c4a000">docs</span><span style="color:#a40000">&#34;</span> <span style="color:#000;font-weight:bold">&gt;</span>}}&#34;&gt;
+</span></span><span style="display:flex;"><span>		Learn More <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">i</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;fas fa-arrow-alt-circle-right ml-2&#34;</span><span style="color:#000;font-weight:bold">&gt;&lt;/</span><span style="color:#204a87;font-weight:bold">i</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;btn btn-lg btn-secondary mr-3 mb-4&#34;</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://example.org&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>		Download <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">i</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;fab fa-github ml-2 &#34;</span><span style="color:#000;font-weight:bold">&gt;&lt;/</span><span style="color:#204a87;font-weight:bold">i</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">p</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;lead mt-5&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>This program is now available in <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">a</span> <span style="color:#c4a000">href</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;#&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>AppStore!<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">a</span><span style="color:#000;font-weight:bold">&gt;&lt;/</span><span style="color:#204a87;font-weight:bold">p</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">div</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;mx-auto mt-5&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>		{{<span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#204a87;font-weight:bold">blocks</span><span style="color:#a40000">/</span><span style="color:#c4a000">link-down</span> <span style="color:#c4a000">color</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;info&#34;</span> <span style="color:#000;font-weight:bold">&gt;</span>}}
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">div</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">div</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>{{<span style="color:#a40000">&lt;</span> /blocks/cover &gt;}}
+</span></span></code></pre></div><p>Note that the relevant shortcode parameters above will have sensible defaults, but is included here for completeness.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Hugo Tip</h4>
+
+    <blockquote>
+<p>Using the bracket styled shortcode delimiter, <code>&gt;}}</code>, tells Hugo that the inner content is HTML/plain text and needs no further processing. Changing the delimiter to <code>%}}</code> means Hugo will treat the content as Markdown. You can use both styles in your pages.</p>
+</blockquote>
+
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td></td>
+<td>The main display title for the block.</td>
+</tr>
+<tr>
+<td>image_anchor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>height</td>
+<td></td>
+<td>See above.</td>
+</tr>
+<tr>
+<td>color</td>
+<td></td>
+<td>See above.</td>
+</tr>
+<tr>
+<td>byline</td>
+<td>Byline text on featured image.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>To set the background image, place an image with the word &ldquo;background&rdquo; in the name in the page&rsquo;s <a href="/docs/adding-content/content/#page-bundles">Page Bundle</a>. For example, in our the example site the background image in the home page&rsquo;s cover block is <a href="https://github.com/google/docsy-example/tree/master/content/en"><code>featured-background.jpg</code></a>, in the same directory.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    If you also include the word <strong>featured</strong> in the image name, e.g. <code>my-featured-background.jpg</code>, it will also be used as the Twitter Card image when shared.
+
+</div>
+
+<p>For available icons, see <a href="https://fontawesome.com/icons?d=gallery&amp;m=free">Font Awesome</a>.</p>
+<h3 id="blockslead">blocks/lead</h3>
+<p>The <strong>blocks/lead</strong> block shortcode is a simple lead/title block with centred text and an arrow down pointing to the next section.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">lead</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;dark&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>TechOS is the OS of the future. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Runs on **bare metal** in the **cloud**!
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">lead</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>height</td>
+<td></td>
+<td>See above.</td>
+</tr>
+<tr>
+<td>color</td>
+<td></td>
+<td>See above.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="blockssection">blocks/section</h3>
+<p>The <strong>blocks/section</strong> shortcode is meant as a general-purpose content container. It comes in two &ldquo;flavors&rdquo;, one for general content and one with styling more suitable for wrapping a horizontal row of feature sections.</p>
+<p>The example below shows a section wrapping 3 feature sections.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">section</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;dark&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">icon</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;fa-lightbulb&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Fastest OS **on the planet**!&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>The new **TechOS** operating system is an open source project. It is a new project, but with grand ambitions.
+</span></span><span style="display:flex;"><span>Please follow this space for updates!
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">icon</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;fab fa-github&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Contributions welcome!&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">url</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://github.com/gohugoio/hugo&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>We do a [Pull Request](https://github.com/gohugoio/hugo/pulls) contributions workflow on **GitHub**. New users are always welcome!
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">icon</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;fab fa-twitter&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Follow us on Twitter!&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">url</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://twitter.com/GoHugoIO&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>For announcement of latest features etc.
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">section</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>height</td>
+<td></td>
+<td>See above.</td>
+</tr>
+<tr>
+<td>color</td>
+<td></td>
+<td>See above.</td>
+</tr>
+<tr>
+<td>type</td>
+<td></td>
+<td>Specify &ldquo;section&rdquo; if you want a general container,  omit this parameter if you want this section to contain a horizontal row of features.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="blocksfeature">blocks/feature</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">icon</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;fab fa-github&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Contributions welcome!&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">url</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://github.com/gohugoio/hugo&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>We do a [Pull Request](https://github.com/gohugoio/hugo/pulls) contributions workflow on **GitHub**. New users are always welcome!
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">feature</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td></td>
+<td>The title to use.</td>
+</tr>
+<tr>
+<td>url</td>
+<td></td>
+<td>The URL to link to.</td>
+</tr>
+<tr>
+<td>icon</td>
+<td></td>
+<td>The icon class to use.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="blockslink-down">blocks/link-down</h3>
+<p>The <strong>blocks/link-down</strong> shortcode creates a navigation link down to the next section. It&rsquo;s meant to be used in combination with the other blocks shortcodes.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">div</span> <span style="color:#c4a000">class</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;mx-auto mt-5&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">blocks</span><span style="color:#a40000">/</span><span style="color:#000">link</span><span style="color:#a40000">-</span><span style="color:#000">down</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;info&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">div</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>info</td>
+<td>See above.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="shortcode-helpers">Shortcode helpers</h2>
+<h3 id="alert">alert</h3>
+<p>The <strong>alert</strong> shortcode creates an alert block that can be used to display notices or warnings.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">alert</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Warning&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;warning&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>This is a warning.
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">alert</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><p>Renders to:</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Warning</h4>
+
+    This is a warning.
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>primary</td>
+<td>One of the theme colors, eg <code>primary</code>, <code>info</code>, <code>warning</code> etc.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pageinfo">pageinfo</h3>
+<p>The <strong>pageinfo</strong> shortcode creates a text box that you can use to add banner information for a page: for example, letting users know that the page contains placeholder content, that the content is deprecated, or that it documents a beta feature.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">pageinfo</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;primary&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>This is placeholder content.
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">pageinfo</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">%</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><p>Renders to:</p>
+
+
+<div class="pageinfo pageinfo-primary">
+<p>This is placeholder content</p>
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>primary</td>
+<td>One of the theme colors, eg <code>primary</code>, <code>info</code>, <code>warning</code> etc.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="imgproc">imgproc</h3>
+<p>The <strong>imgproc</strong> shortcode finds an image in the current <a href="/docs/adding-content/content/#page-bundles">Page Bundle</a> and scales it given a set of processing instructions.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">imgproc</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">spruce</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Fill</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;400x450&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>Norway Spruce Picea abies shoot with foliage buds.
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">imgproc</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div>
+
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+	<img class="card-img-top" src="/blog/2017/01/05/docsy-shortcodes/spruce_hu0fa7d855ef6295d2886abf8df96c5044_124081_400x450_fill_q75_catmullrom_smart1.jpg" width="400" height="450">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Norway Spruce Picea abies shoot with foliage buds.
+<small class="text-muted"><br/>Photo: Bjørn Erik Pedersen / CC-BY-SA</small></p>
+	</div>
+	
+</div>
+<p>The example above has also a byline with photo attribution added. When using illustrations with a free license from <a href="https://commons.wikimedia.org/">WikiMedia</a> and similar, you will in most situations need a way to attribute the author or licensor. You can add metadata to your page resources in the page front matter. The <code>byline</code> param is used by convention in this theme:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">resources</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span>- <span style="color:#204a87;font-weight:bold">src</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;**spruce*.jpg&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">params</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">byline</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;Photo: Bjørn Erik Pedersen / CC-BY-SA&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:right">Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td>The image filename or enough of it to identify it (we do Glob matching)</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td>Command. One of <code>Fit</code>, <code>Resize</code> or <code>Fill</code>. See <a href="https://gohugo.io/content-management/image-processing/#image-processing-methods">Image Processing Methods</a>.</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td>Processing options, e.g. <code>400x450</code>. See <a href="https://gohugo.io/content-management/image-processing/#image-processing-methods">Image Processing Options</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="swaggerui">swaggerui</h3>
+<p>The <code>swaggerui</code> shortcode can be placed anywhere inside a page with the <a href="https://github.com/google/docsy/tree/master/layouts/swagger"><code>swagger</code> layout</a>; it renders <a href="https://swagger.io/tools/swagger-ui/">Swagger UI</a> using any OpenAPI YAML or JSON file as source. This can be hosted anywhere you like, for example in your site&rsquo;s root <a href="/docs/adding-content/content/#adding-static-content"><code>/static</code> folder</a>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">---</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">title</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;Pet Store API&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">type</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">swagger</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">weight</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">description</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Reference for the Pet Store API</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">---</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span>{{<span style="color:#000">&lt; swaggerui src=&#34;/openapi/petstore.yaml&#34; &gt;}}</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>You can customize Swagger UI&rsquo;s look and feel by overriding Swagger&rsquo;s CSS or by editing and compiling a <a href="https://github.com/swagger-api/swagger-ui">Swagger UI dist</a> yourself and replace <code>themes/docsy/static/css/swagger-ui.css</code>.</p>
+<h3 id="iframe">iframe</h3>
+<p>With this shortcode you can embed external content into a Docsy page as an inline frame (<code>iframe</code>) - see: <a href="https://www.w3schools.com/tags/tag_iframe.asp">https://www.w3schools.com/tags/tag_iframe.asp</a></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td></td>
+<td>URL of external content</td>
+</tr>
+<tr>
+<td>width</td>
+<td>100%</td>
+<td>Width of iframe</td>
+</tr>
+<tr>
+<td>tryautoheight</td>
+<td>true</td>
+<td>If true the shortcode tries to calculate the needed height for the embedded content using JavaScript, as described here: <a href="https://stackoverflow.com/a/14618068">https://stackoverflow.com/a/14618068</a>. This is only possible if the embedded content is <a href="https://stackoverflow.com/questions/22086722/resize-cross-domain-iframe-height">on the same domain</a>. Note that even if the embedded content is on the same domain, it depends on the structure of the content if the height can be calculated correctly.</td>
+</tr>
+<tr>
+<td>style</td>
+<td>min-height:98vh; border:none;</td>
+<td>CSS styles for the iframe. <code>min-height:98vh;</code> is a backup if <code>tryautoheight</code> doesn&rsquo;t work. <code>border:none;</code> removes the border from the iframe - this is useful if you want the embedded content to look more like internal content from your page.</td>
+</tr>
+<tr>
+<td>sandbox</td>
+<td>false</td>
+<td>You can switch the sandbox completely on by setting <code>sandbox = true</code> or allow specific functionality with the common values for the iframe parameter <code>sandbox</code> defined in the <a href="https://www.w3schools.com/tags/att_iframe_sandbox.asp">HTML standard</a>.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>iframe-name</td>
+<td>Specify the <a href="https://www.w3schools.com/tags/att_iframe_name.asp">name of the iframe</a>.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>iframe-id</td>
+<td>Sets the ID of the iframe.</td>
+</tr>
+<tr>
+<td>class</td>
+<td></td>
+<td>Optional parameter to set the classes of the iframe.</td>
+</tr>
+<tr>
+<td>sub</td>
+<td>Your browser cannot display embedded frames. You can access the embedded page via the following link:</td>
+<td>The text displayed (in addition to the embedded URL) if the user&rsquo;s browser can&rsquo;t display embedded frames.</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Warning</h4>
+
+    <p>You can only embed external content from a server when its <code>X-Frame-Options</code> is not set or if it specifically allows embedding for your site. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a> for details.</p>
+<p>There are several tools you can use to check if a website can be embedded via iframe - e.g.: <a href="https://gf.dev/x-frame-options-test">https://gf.dev/x-frame-options-test</a>. Be aware that when this test says &ldquo;Couldn’t find the X-Frame-Options header
+in the response headers.&rdquo; you <strong>CAN</strong> embed it, but when the test says &ldquo;Great! X-Frame-Options header was found in the HTTP response headers as highlighted below.&rdquo;, you <strong>CANNOT</strong> - unless it has been explicitly enabled for your site.</p>
+
+
+</div>
+
+<h2 id="tabbed-panes">Tabbed panes</h2>
+<p>Sometimes it&rsquo;s very useful to have tabbed panes when authoring content. One common use-case is to show multiple syntax highlighted code blocks that showcase the same problem, and how to solve it in different programming languages. As an example, the table below shows the language-specific variants of the famous <code>Hello world!</code> program one usually writes first when learning a new programming language from scratch:</p>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs" id="tabs-6" role="tablist"><li class="nav-item">
+      <a class="nav-link active tab-C"
+        id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&#34;C&#34;);"
+        aria-controls="tabs-6-0" aria-selected="true">
+        C
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-C--"
+        id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&#34;C--&#34;);"
+        aria-controls="tabs-6-1" aria-selected="false">
+        C&#43;&#43;
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Go"
+        id="tabs-6-2-tab" data-toggle="tab" href="#tabs-6-2" role="tab" onclick="handleClick(&#34;Go&#34;);"
+        aria-controls="tabs-6-2" aria-selected="false">
+        Go
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Java"
+        id="tabs-6-3-tab" data-toggle="tab" href="#tabs-6-3" role="tab" onclick="handleClick(&#34;Java&#34;);"
+        aria-controls="tabs-6-3" aria-selected="false">
+        Java
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Kotlin"
+        id="tabs-6-4-tab" data-toggle="tab" href="#tabs-6-4" role="tab" onclick="handleClick(&#34;Kotlin&#34;);"
+        aria-controls="tabs-6-4" aria-selected="false">
+        Kotlin
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Lua"
+        id="tabs-6-5-tab" data-toggle="tab" href="#tabs-6-5" role="tab" onclick="handleClick(&#34;Lua&#34;);"
+        aria-controls="tabs-6-5" aria-selected="false">
+        Lua
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-PHP"
+        id="tabs-6-6-tab" data-toggle="tab" href="#tabs-6-6" role="tab" onclick="handleClick(&#34;PHP&#34;);"
+        aria-controls="tabs-6-6" aria-selected="false">
+        PHP
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Python"
+        id="tabs-6-7-tab" data-toggle="tab" href="#tabs-6-7" role="tab" onclick="handleClick(&#34;Python&#34;);"
+        aria-controls="tabs-6-7" aria-selected="false">
+        Python
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Ruby"
+        id="tabs-6-8-tab" data-toggle="tab" href="#tabs-6-8" role="tab" onclick="handleClick(&#34;Ruby&#34;);"
+        aria-controls="tabs-6-8" aria-selected="false">
+        Ruby
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Scala"
+        id="tabs-6-9-tab" data-toggle="tab" href="#tabs-6-9" role="tab" onclick="handleClick(&#34;Scala&#34;);"
+        aria-controls="tabs-6-9" aria-selected="false">
+        Scala
+      </a>
+    </li></ul>
+
+
+<div class="tab-content" id="tabs-6-content">
+        
+          
+        
+    <div class="tab-pane fade show active"
+        id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdlib.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">puts</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello World!&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">EXIT_SUCCESS</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">std</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">cout</span> <span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span> <span style="color:#4e9a06">&#34;Hello World!&#34;</span> <span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span> <span style="color:#000">std</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">endl</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-2" role="tabpanel" aria-labelled-by="tabs-6-2-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Go" data-lang="Go"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">package</span> <span style="color:#000">main</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#4e9a06">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">func</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">fmt</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello World!\n&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-3" role="tabpanel" aria-labelled-by="tabs-6-3-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Java" data-lang="Java"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">HelloWorld</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">main</span><span style="color:#ce5c00;font-weight:bold">(</span> <span style="color:#000">String</span> <span style="color:#000">args</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span> <span style="color:#4e9a06">&#34;Hello World!&#34;</span> <span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">}</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-4" role="tabpanel" aria-labelled-by="tabs-6-4-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Kotlin" data-lang="Kotlin"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">args</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Array</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">println</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello, world!&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-5" role="tabpanel" aria-labelled-by="tabs-6-5-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#000">print</span> <span style="color:#4e9a06">&#34;Hello world&#34;</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-6" role="tabpanel" aria-labelled-by="tabs-6-6-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-PHP" data-lang="PHP"><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">&lt;?</span><span style="color:#000">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#4e9a06">&#39;Hello World!&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">?&gt;</span><span style="color:#a40000">
+</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-7" role="tabpanel" aria-labelled-by="tabs-6-7-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#204a87">print</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello World!&#34;</span><span style="color:#000;font-weight:bold">)</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-8" role="tabpanel" aria-labelled-by="tabs-6-8-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Ruby" data-lang="Ruby"><span style="display:flex;"><span><span style="color:#204a87">puts</span> <span style="color:#4e9a06">&#34;Hello World!&#34;</span></span></span></code></pre></div></div>
+  
+        
+          
+        
+    <div class="tab-pane fade"
+        id="tabs-6-9" role="tabpanel" aria-labelled-by="tabs-6-9-tab"><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Scala" data-lang="Scala"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">object</span> <span style="color:#000">HelloWorld</span> <span style="color:#204a87;font-weight:bold">extends</span> <span style="color:#000">App</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello world!&#34;</span><span style="color:#ce5c00;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">}</span></span></span></code></pre></div></div>
+  
+</div>
+
+<p>The Docsy template provides two shortcodes <code>tabpane</code> and <code>tab</code> that let you easily create tabbed panes. To see how to use them, have a look at the following code block, which renders to a pane with three tabs:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">tabpane</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">tab</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;English&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>    Welcome!
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">tab</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">tab</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;German&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>    Herzlich willkommen!
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">tab</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">tab</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Swahili&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>    Karibu sana!
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">tab</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">tabpane</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><p>This code translates to the tabbed pane below, showing a <code>Welcome!</code> greeting in English, German or Swahili:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs" id="tabs-7" role="tablist"><li class="nav-item">
+      <a class="nav-link active tab-English"
+        id="tabs-7-0-tab" data-toggle="tab" href="#tabs-7-0" role="tab" onclick="handleClick(&#34;English&#34;);"
+        aria-controls="tabs-7-0" aria-selected="true">
+        English
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-German"
+        id="tabs-7-1-tab" data-toggle="tab" href="#tabs-7-1" role="tab" onclick="handleClick(&#34;German&#34;);"
+        aria-controls="tabs-7-1" aria-selected="false">
+        German
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link tab-Swahili"
+        id="tabs-7-2-tab" data-toggle="tab" href="#tabs-7-2" role="tab" onclick="handleClick(&#34;Swahili&#34;);"
+        aria-controls="tabs-7-2" aria-selected="false">
+        Swahili
+      </a>
+    </li></ul>
+
+
+<div class="tab-content" id="tabs-7-content"><div class="tab-pane fade show active"
+        id="tabs-7-0" role="tabpanel" aria-labelled-by="tabs-7-0-tab"><pre tabindex="0"><code class="language-en" data-lang="en">Welcome!</code></pre></div>
+  <div class="tab-pane fade"
+        id="tabs-7-1" role="tabpanel" aria-labelled-by="tabs-7-1-tab"><pre tabindex="0"><code class="language-de" data-lang="de">Herzlich willkommen!</code></pre></div>
+  <div class="tab-pane fade"
+        id="tabs-7-2" role="tabpanel" aria-labelled-by="tabs-7-2-tab"><pre tabindex="0"><code class="language-en" data-lang="en">Karibu sana!</code></pre></div>
+  
+</div>
+
+<h3 id="shortcode-details">Shortcode details</h3>
+<p>Tabbed panes are implemented using two shortcodes:</p>
+<ul>
+<li>The <code>tabpane</code> shortcode, which is the container element for the tabs. This shortcode can optionally held the named parameters <code>lang</code> and/or <code>highlight</code>. The values of these optional parameters are passed on as second <code>LANG</code> and third <code>OPTIONS</code> arguments to Hugo&rsquo;s built-in <a href="https://gohugo.io/functions/highlight/"><code>highlight</code></a> function which is used to render the code blocks of the individual tabs. In case the header text of the tab equals the <code>language</code> used in the tab&rsquo;s code block (as in the first tabbed pane example above), you may specify <code>langEqualsHeader=true</code> in the surrounding <code>tabpane</code> shortcode. Then, the header text of the individual tab is automatically set as <code>language</code> parameter of the respective tab.</li>
+<li>The various <code>tab</code> shortcodes which actually represent the tabs you would like to show. We recommend specifying the named parameter <code>header</code> for each text in order to set the header text of each tab. If needed, you can additionally specify the named parameters <code>lang</code> and <code>highlight</code> for each tab. This allows you to overwrite the settings given in the parent <code>tabpane</code> shortcode. If the language is neither specified in the <code>tabpane</code> nor in the <code>tab</code>shortcode, it defaults to Hugo&rsquo;s site variable <code>.Site.Language.Lang</code>.</li>
+</ul>
+<h2 id="card-panes">Card panes</h2>
+<p>When authoring content, it&rsquo;s sometimes very useful to put similar text blocks or code fragments on card like elements, which can be optionally presented side by side. Let&rsquo;s showcase this feature with the following sample card group which shows the first four Presidents of the United States:</p>
+<div class="card-deck mb-4">
+<div class="card mb-4">
+  
+    <div class="card-header">
+      
+        <strong>George Washington</strong>
+      
+    </div>
+  
+  <div class="card-body">
+    
+      <h5 class="card-title">
+        
+          *1732     †1799
+        
+      </h5>
+    
+    
+      <h6 class="card-title mb-2 text-muted">
+        
+          <strong>President:</strong> 1789 – 1797
+        
+      </h6>
+    
+    
+      <p class="card-text">
+        
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/633px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" alt="PortraitGeorgeWashington" title="Portrait George Washington">
+        
+      </p>
+    
+  </div>
+  
+    <div class="card-footer">
+      
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/George_Washington_signature.svg/320px-George_Washington_signature.svg.png" alt="SignatureGeorgeWashington" title="Signature George Washington">
+      
+    </div>
+  
+</div>
+
+<div class="card mb-4">
+  
+    <div class="card-header">
+      
+        <strong>John Adams</strong>
+      
+    </div>
+  
+  <div class="card-body">
+    
+      <h5 class="card-title">
+        
+          * 1735     † 1826
+        
+      </h5>
+    
+    
+      <h6 class="card-title mb-2 text-muted">
+        
+          <strong>President:</strong> 1797 – 1801
+        
+      </h6>
+    
+    
+      <p class="card-text">
+        
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Gilbert_Stuart%2C_John_Adams%2C_c._1800-1815%2C_NGA_42933.jpg/633px-Gilbert_Stuart%2C_John_Adams%2C_c._1800-1815%2C_NGA_42933.jpg" alt="PortraitJohnAdams" title="Portrait John Adams">
+        
+      </p>
+    
+  </div>
+  
+    <div class="card-footer">
+      
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/John_Adams_Sig_2.svg/320px-John_Adams_Sig_2.svg.png" alt="SignatureJohnAdams" title="Signature John Adams">
+      
+    </div>
+  
+</div>
+
+<div class="card mb-4">
+  
+    <div class="card-header">
+      
+        <strong>Thomas Jefferson</strong>
+      
+    </div>
+  
+  <div class="card-body">
+    
+      <h5 class="card-title">
+        
+          * 1743     † 1826
+        
+      </h5>
+    
+    
+      <h6 class="card-title mb-2 text-muted">
+        
+          <strong>President:</strong> 1801 – 1809
+        
+      </h6>
+    
+    
+      <p class="card-text">
+        
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg/390px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg" alt="PortraitThomasJefferson" title="Portrait Thomas Jefferson">
+        
+      </p>
+    
+  </div>
+  
+    <div class="card-footer">
+      
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Thomas_Jefferson_Signature.svg/320px-Thomas_Jefferson_Signature.svg.png" alt="SignatureThomasJefferson" title="Signature Thomas Jefferson">
+      
+    </div>
+  
+</div>
+
+<div class="card mb-4">
+  
+    <div class="card-header">
+      
+        <strong>James Madison</strong>
+      
+    </div>
+  
+  <div class="card-body">
+    
+      <h5 class="card-title">
+        
+          * 1751     † 1836
+        
+      </h5>
+    
+    
+      <h6 class="card-title mb-2 text-muted">
+        
+          <strong>President:</strong> 1809 – 1817
+        
+      </h6>
+    
+    
+      <p class="card-text">
+        
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/James_Madison%28cropped%29%28c%29.jpg/393px-James_Madison%28cropped%29%28c%29.jpg" alt="PortraitJamesMadison" title="Portrait James Madison">
+        
+      </p>
+    
+  </div>
+  
+    <div class="card-footer">
+      
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/James_Madison_sig.svg/320px-James_Madison_sig.svg.png" alt="SignatureJamesMadison" title="Signature James Madison">
+      
+    </div>
+  
+</div>
+
+</div>
+<p>Docsy supports creating such card panes via different shortcodes:</p>
+<ul>
+<li>The <code>cardpane</code> shortcode which is the container element for the various cards to be presented.</li>
+<li>The <code>card</code> shortcodes, with each shortcode representing an individual card. While cards are often presented inside a card group, a single card may stand on its own, too. A <code>card</code> shortcode can held text, images or any other arbitrary kind of markdown or HTML markup as content. If your content is programming code, you are advised to make use of the <code>card-code</code> shortcode, a special kind of card with code-highlighting and other optional features like line numbers, highlighting of certain lines, ….</li>
+</ul>
+<h3 id="shortcode-card-for-text-images-">Shortcode <code>card</code> (for text, images, …)</h3>
+<p>As stated above, a card is coded using one of the shortcode <code>card</code> or <code>card-code</code>.
+If your content is any kind of text other than programming code, use the universal <code>card</code>shortcode. The following code sample demonstrates how to code a card element:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;**Imagine**&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Artist and songwriter: John Lennon&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">subtitle</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Co-writer: Yoko Ono&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#000">footer</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;![SignatureJohnLennon](https://server.tld/…/signature.png \&#34;Signature John Lennon\&#34;)&#34;</span><span style="color:#a40000">&gt;&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>Imagine there&#39;s no heaven, It&#39;s easy if you try<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">br</span><span style="color:#000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>No hell below us, above us only sky<span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">br</span><span style="color:#000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>Imagine all the people living for today…
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>…
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><p>This code translates to the left card shown below, showing the lyrics of John Lennon&rsquo;s famous song <code>Imagine</code>. A second explanatory card element to the right indicates and explains the individual components of a card:</p>
+<div class="card-deck mb-4">
+<div class="card mb-4">
+  
+    <div class="card-header">
+      
+        <strong>Imagine</strong>
+      
+    </div>
+  
+  <div class="card-body">
+    
+      <h5 class="card-title">
+        
+          Artist and songwriter: John Lennon
+        
+      </h5>
+    
+    
+      <h6 class="card-title mb-2 text-muted">
+        
+          Co-writer: Yoko Ono
+        
+      </h6>
+    
+    
+      <p class="card-text">
+        
+          <p>Imagine there&rsquo;s no heaven, It&rsquo;s easy if you try<br/>
+No hell below us, above us only sky<br/>
+Imagine all the people living for today…</p>
+<p>Imagine there&rsquo;s no countries, it isn&rsquo;t hard to do<br/>
+Nothing to kill or die for, and no religion too<br/>
+Imagine all the people living life in peace…</p>
+<p>Imagine no possessions, I wonder if you can<br/>
+No need for greed or hunger - a brotherhood of man<br/>
+Imagine all the people sharing all the world…</p>
+<p>You may say I&rsquo;m a dreamer, but I&rsquo;m not the only one<br/>
+I hope someday you&rsquo;ll join us and the world will live as one</p>
+
+        
+      </p>
+    
+  </div>
+  
+    <div class="card-footer">
+      
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Firma_de_John_Lennon.svg/320px-Firma_de_John_Lennon.svg.png" alt="SignatureJohnLennon" title="Signature John Lennon">
+      
+    </div>
+  
+</div>
+
+<div class="card mb-4">
+  
+    <div class="card-header">
+      
+        <strong>Header</strong>: specified via named parameter <code>Header</code>
+      
+    </div>
+  
+  <div class="card-body">
+    
+      <h5 class="card-title">
+        
+          <strong>Card title</strong>: specified via named parameter <code>title</code>
+        
+      </h5>
+    
+    
+      <h6 class="card-title mb-2 text-muted">
+        
+          <strong>Card subtitle</strong>: specified via named parameter <code>subtitle</code>
+        
+      </h6>
+    
+    
+      <p class="card-text">
+        
+          <strong>Content</strong>: inner content of the shortcode, this may be formatted text, images, videos, … . If the extension of your page file equals <code>.md</code>, markdown format is expected, otherwise, your content will be treated as plain HTML.
+        
+      </p>
+    
+  </div>
+  
+    <div class="card-footer">
+      
+        <strong>Footer</strong>: specified via named parameter <code>footer</code>
+      
+    </div>
+  
+</div>
+
+</div>
+<p>While the main content of the card is taken from the inner markup of the <code>card</code> shortcode, the optional elements <code>footer</code>, <code>header</code>, <code>title</code>, and <code>subtitle</code> are all specified as named parameters of the shortcode.</p>
+<h3 id="shortcode-card-code-for-programming-code">Shortcode <code>card-code</code> (for programming code)</h3>
+<p>In case you want to display programming code on your card, a special shortcode <code>card-code</code> is provided for this purpose. The following sample demonstrates how to code a card element with the famous <code>Hello world!</code>application coded in C:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">card</span><span style="color:#a40000">-</span><span style="color:#000">code</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;**C**&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">lang</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;C&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>#include <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">stdio.h</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>#include <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">stdlib.h</span><span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>int main(void)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  puts(&#34;Hello World!&#34;);
+</span></span><span style="display:flex;"><span>  return EXIT_SUCCESS;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">card</span><span style="color:#a40000">-</span><span style="color:#000">code</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><p>This code translates to the card shown below:</p>
+<div class="card">
+  
+  
+    
+  
+  
+  <div class="card-header bg-white"><strong>C</strong></div>
+  
+  <div class="card-body code p-l0 m-0">
+      <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdlib.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">puts</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello World!&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">EXIT_SUCCESS</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+  </div>
+</div>
+
+<p><br/>The <code>card-code</code> shortcode can optionally held the named parameters <code>lang</code> and/or <code>highlight</code>. The values of these optional parameters are passed on as second <code>LANG</code> and third <code>OPTIONS</code> arguments to Hugo&rsquo;s built-in <a href="https://gohugo.io/functions/highlight/"><code>highlight</code></a> function which is used to render the code block presented on the card.</p>
+<h3 id="card-groups">Card groups</h3>
+<p>Displaying two ore more cards side by side can be easily achieved by putting them between the opening and closing elements of a <code>cardpane</code> shortcode.
+The general markup of a card group resembles closely the markup of a tabbed pane:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">cardpane</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Header card 1&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>    Content card 1
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Header card 2&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>    Content card 2
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">header</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;Header card 3&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span>    Content card 3
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">card</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">{{</span><span style="color:#a40000">&lt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">/</span><span style="color:#000">cardpane</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">&gt;</span><span style="color:#8f5902;font-style:italic">}}</span>
+</span></span></code></pre></div><p>Contrary to tabs, cards are presented side by side, however. This is especially useful it you want to compare different programming techniques (traditional vs. modern) on two cards, like demonstrated in the example above:</p>
+<div class="card-deck mb-4">
+<div class="card">
+  
+  
+  
+  <div class="card-header bg-white"><strong>Java 5</strong></div>
+  
+  <div class="card-body code p-l0 m-0">
+      <pre tabindex="0"><code>
+File[] hiddenFiles = new File(&#34;directory_name&#34;)
+  .listFiles(new FileFilter() {
+    public boolean accept(File file) {
+      return file.isHidden();
+    }
+  });
+</code></pre>
+  </div>
+</div>
+
+<div class="card">
+  
+  
+  
+  <div class="card-header bg-white"><strong>Java 8, Lambda expression</strong></div>
+  
+  <div class="card-body code p-l0 m-0">
+      <pre tabindex="0"><code>
+File[] hiddenFiles = new File(&#34;directory_name&#34;)
+  .listFiles(File::isHidden);
+</code></pre>
+  </div>
+</div>
+
+</div>
+
+	
+
+	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
+  <li>
+    <a href="/blog/2017/01/05/logos-and-images/" aria-label="Previous - Logos and Images" class="btn btn-primary"><span class="mr-1">←</span>Previous</a>
+  </li>
+    <a href="/blog/2020/02/02/doc-versioning/" aria-label="Next - Doc Versioning" class="btn btn-primary">Next<span class="ml-1">→</span></a>
+  </li>
+</ul>
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy/discussions" aria-label="GitHub Discussions">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://groups.google.com/forum/#!forum/docsy-users" aria-label="User mailing list">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/docsydocs" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
+    <a class="text-white" target="_blank" rel="noopener" href="https://stackoverflow.com/questions/tagged/docsy" aria-label="Stack Overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2022 The Docsy Authors All Rights Reserved</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.13.4/dist/mermaid.min.js" integrity="sha512-JERecFUBbsm75UpkVheAuDOE8NdHjQBrPACfEQYPwvPG+fjgCpHAz1Jw2ci9EXmd3DdfiWth3O3CQvcfEg8gsA==" crossorigin="anonymous"></script>
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+<script src='/js/deflate.js'></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha512-vJqxkZ+Sugf/6WRlpcxN01qVfX/29hF6qc33eHF1va3NgoV+U+wCi+uTAsQ10sDoGyBxHLdaHvGwDlV3yVYboA==" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha512-5ufNcHqOYgilGEHPfuRIQ5B/vDS1M8+UC+DESZ5CwVgGTg+b2Ol/15rYL/GiCWJ/Sx8oVo0FPFok1dPk8U9INQ=="
+    crossorigin="anonymous"></script>
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js"
+    integrity="sha512-HWb6LyQhO6UkmYLjdSblpgiOvvbdkoMRjln0POPhOVbZu3l4QdqwZnMJ/cuwKScU5pWARejB495TAAAz0WNsXQ=="
+    crossorigin="anonymous"></script>
+
+
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js'
+    integrity='sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==' crossorigin='anonymous' 
+    onload='renderMathInElement(document.body, null);'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+  </body>
+</html>

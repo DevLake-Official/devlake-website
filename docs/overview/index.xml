@@ -1,0 +1,83 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Merico – Overview</title>
+    <link>https://mappjzc.github.com/docs/overview/</link>
+    <description>Recent content in Overview on Merico</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://mappjzc.github.com/docs/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: What is DevLake?</title>
+      <link>https://mappjzc.github.com/docs/overview/1.whatisdevlake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/docs/overview/1.whatisdevlake/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;what-is-devlake&#34;&gt;What is DevLake?&lt;/h2&gt;
+&lt;p&gt;What is DevLake?
+DevLake brings your DevOps data into one practical, customized, extensible view. Ingest, analyze, and visualize data from an ever-growing list of developer tools, with our open source product.&lt;/p&gt;
+&lt;p&gt;DevLake is designed for developer teams looking to make better sense of their development process and to bring a more data-driven approach to their own practices. You can ask DevLake many questions regarding your development process. Just connect and query.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app-259373083972538368-3002.ars.teamcode.com/d/0Rjxknc7z/demo-homepage?orgId=1&#34;&gt;See demo&lt;/a&gt;. Username/password:test/test. The demo is based on the data from this repo, merico-dev/lake.&lt;/p&gt;
+&lt;p&gt;Get started with just a few clicks&lt;/p&gt;
+&lt;table&gt; &lt;tr&gt; &lt;td valign=&#34;middle&#34;&gt;&lt;a href=&#34;#user-setup&#34;&gt;Run DevLake&lt;/a&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+&lt;br&gt;
+&lt;div align=&#34;left&#34;&gt; &lt;img src=&#34;https://user-images.githubusercontent.com/14050754/145056261-ceaf7044-f5c5-420f-80ca-54e56eb8e2a7.png&#34; width=&#34;100%&#34; alt=&#34;User Flow&#34; style=&#34;border-radius:15px;&#34;/&gt; &lt;p align=&#34;center&#34;&gt;User Flow&lt;/p&gt;
+&lt;p&gt;What can be accomplished with DevLake?
+Collect DevOps data across the entire SDLC process and connect data silos
+A standard &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DataModel.Domain-layer-schema&#34;&gt;data model&lt;/a&gt; and out-of-the-box &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/Metric-Cheatsheet&#34;&gt;metrics&lt;/a&gt; for software engineering
+Flexible &lt;a href=&#34;https://github.com/merico-dev/lake/blob/main/ARCHITECTURE.md&#34;&gt;framework&lt;/a&gt; for data collection and ETL, support customized analysis&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Architecture</title>
+      <link>https://mappjzc.github.com/docs/overview/2.architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/docs/overview/2.architecture/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;What is DevLake?
+DevLake brings your DevOps data into one practical, customized, extensible view. Ingest, analyze, and visualize data from an ever-growing list of developer tools, with our open source product.&lt;/p&gt;
+&lt;p&gt;DevLake is designed for developer teams looking to make better sense of their development process and to bring a more data-driven approach to their own practices. You can ask DevLake many questions regarding your development process. Just connect and query.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app-259373083972538368-3002.ars.teamcode.com/d/0Rjxknc7z/demo-homepage?orgId=1&#34;&gt;See demo&lt;/a&gt;. Username/password:test/test. The demo is based on the data from this repo, merico-dev/lake.&lt;/p&gt;
+&lt;p&gt;Get started with just a few clicks&lt;/p&gt;
+&lt;table&gt; &lt;tr&gt; &lt;td valign=&#34;middle&#34;&gt;&lt;a href=&#34;#user-setup&#34;&gt;Run DevLake&lt;/a&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+&lt;br&gt;
+&lt;div align=&#34;left&#34;&gt; &lt;img src=&#34;https://user-images.githubusercontent.com/14050754/145056261-ceaf7044-f5c5-420f-80ca-54e56eb8e2a7.png&#34; width=&#34;100%&#34; alt=&#34;User Flow&#34; style=&#34;border-radius:15px;&#34;/&gt; &lt;p align=&#34;center&#34;&gt;User Flow&lt;/p&gt;
+&lt;p&gt;What can be accomplished with DevLake?
+Collect DevOps data across the entire SDLC process and connect data silos
+A standard &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DataModel.Domain-layer-schema&#34;&gt;data model&lt;/a&gt; and out-of-the-box &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/Metric-Cheatsheet&#34;&gt;metrics&lt;/a&gt; for software engineering
+Flexible &lt;a href=&#34;https://github.com/merico-dev/lake/blob/main/ARCHITECTURE.md&#34;&gt;framework&lt;/a&gt; for data collection and ETL, support customized analysis&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Roadmap</title>
+      <link>https://mappjzc.github.com/docs/overview/3.roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mappjzc.github.com/docs/overview/3.roadmap/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;no-data&#34;&gt;No Data&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
